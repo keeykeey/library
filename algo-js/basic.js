@@ -1,12 +1,13 @@
-function getDistance(...array){
+function getDistance(array){
     let loss = 0;
     for (const value of array){
-        loss += int(value);
+        loss += value;
     } 
     return loss
 }
 
 array = [...Array(5).keys()];
+array = [1,2,3]
 loss = getDistance(array);
 console.log(loss);
 
